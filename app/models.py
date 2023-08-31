@@ -1,5 +1,4 @@
 # models.py
-
 from datetime import datetime
 
 from sqlalchemy import create_engine, desc
@@ -32,4 +31,3 @@ class Student(Base):
         return f"Student {self.id}: " \
             + f"{self.name}, " \
             + f"Grade {self.grade}"
-

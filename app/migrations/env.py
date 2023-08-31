@@ -6,7 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 # migrations/env.py
 # search file for target_metadata (line 21)
-from models import Base
+from app.models import Base
 target_metadata = Base.metadata
 
 # this is the Alembic Config object, which provides
@@ -23,7 +23,7 @@ fileConfig(config.config_file_name)
 # target_metadata = mymodel.Base.metadata
 # migrations/env.py
 # lines 21-22
-from models import Base
+from app.models import Base
 target_metadata = Base.metadata
 target_metadata = None
 
